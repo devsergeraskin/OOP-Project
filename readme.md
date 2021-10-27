@@ -89,7 +89,7 @@ The `Utilities` class has the following structure:
 -  `std::string extractToken(const std::string& str, size_t& next_pos, bool& more)` -- extracts a token from string `str` referred to by the first parameter
     - This function uses the delimiter to extract the next token from `str` starting at position `next_pos`.
     - If successful, this function returns a copy of the extracted token found, updates `next_pos` with the position of the next token, and sets `more` to `true` (`false` otherwise0.
-    - This function reports an exception a delimiter is found at `next_pos`.
+    - This function reports an exception if a delimiter is found at `next_pos`.
     - This function updates the current object's `m_widthField` data member if its current value is less than the size of the token extracted.
     - **Note:**  in this application, `str` represents a single line that has been read from an input file
 
